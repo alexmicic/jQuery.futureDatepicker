@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery futureDatepicker</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <link href="calendar.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="main">
+        <input id="date" type="text" name="date" placeholder="Click to choose date" />
+    </div>
+
+    <script src="Scripts/jquery-2.2.3.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-calendar.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('#date').futureDatepicker({
+                displayWeekAbbr: true,
+                startIn: 0,
+                futureMonths: 12,
+                datepicker: true,
+                statusBar: true,
+                showBgMonths: true,
+                additionalClass: 'default',
+                beforePick: function () {
+                    console.log('before is alerted');
+                },
+                afterPick: function () {
+                    console.log('after is alerted');
+                    console.log($('#date').val())
+                }
+            });
+        });
+    </script>
+</body>
+</html>
