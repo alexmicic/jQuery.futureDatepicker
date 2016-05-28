@@ -16,7 +16,7 @@ To start using the plugin, simply include script code somewhere after jQuery lib
     <!-- your html code -->
     
     <!-- scripts -->
-    <script src="~/jquery.{1.9 or higher}.min.js"></script>
+    <script src="~/jquery.{2.xx}.min.js"></script>
     <script src="~/jquery-calendar.js"></script>
   </body>
 </html>
@@ -36,7 +36,7 @@ After you included script into your page, you need to create an element that wil
     <input id="element" type="text" name="element" placeholder="Click here to pick a date">
     
     <!-- scripts  -->
-    <script src="~/jquery.{1.9 or higher}.min.js"></script>
+    <script src="~/jquery.{2.xx}.min.js"></script>
     <script src="~/jquery-calendar.js"></script>
     <script>
         $(document).ready(function () {
