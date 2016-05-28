@@ -11,6 +11,7 @@ To start using the plugin, simply include css file in the ```head``` section and
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- css -->
     <link href="~/jquery.futureDatepicker.min.css" rel="stylesheet" />
   </head>
   <body>
@@ -29,6 +30,7 @@ After you included script into your page, you need to create an element that wil
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- css -->
     <link href="~/jquery.futureDatepicker.min.css" rel="stylesheet" />
   </head>
   <body>
