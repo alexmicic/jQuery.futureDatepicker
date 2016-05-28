@@ -6,18 +6,19 @@ Design is fully responsive and have clean and minimalist design and it is primar
 The plugin requires jQuery 2.xx version.
 
 ## Installation
-To start using the plugin, simply include script code somewhere after jQuery library, preferably at the bottom of the page, like on the example below: 
+To start using the plugin, simply include css file in the ```head``` section and script file somewhere after jQuery library, preferably at the bottom of the page, like on the example below: 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="~/jquery.futureDatepicker.min.css" rel="stylesheet" />
   </head>
   <body>
     <!-- your html code -->
     
     <!-- scripts -->
     <script src="~/jquery.{2.xx}.min.js"></script>
-    <script src="~/jquery-calendar.js"></script>
+    <script src="~/jquery.futureDatepicker.js"></script>
   </body>
 </html>
 ```
@@ -28,6 +29,7 @@ After you included script into your page, you need to create an element that wil
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="~/jquery.futureDatepicker.min.css" rel="stylesheet" />
   </head>
   <body>
     <!-- your html code -->
@@ -37,7 +39,7 @@ After you included script into your page, you need to create an element that wil
     
     <!-- scripts  -->
     <script src="~/jquery.{2.xx}.min.js"></script>
-    <script src="~/jquery-calendar.js"></script>
+    <script src="~/jquery.futureDatepicker.js"></script>
     <script>
         $(document).ready(function () {
             $('#element').futureDatepicker({
