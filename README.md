@@ -2,6 +2,9 @@
 Simple jQuery plugin that allows you to create awesome datepicker for the future dates. 
 Design is fully responsive and have clean and minimalist design and it is primarily built for the mobile devices. It's relaying on CSS ```flex``` so it is only compatible with modern web browser that supports this property.
 
+## Demo
+Check out the demo example [here](http://alexmicic.github.io/jQuery.futureDatepicker.demo/).
+
 ## Dependencies
 The plugin requires jQuery 2.xx version.
 
