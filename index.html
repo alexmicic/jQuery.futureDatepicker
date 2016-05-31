@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>jQuery.futureDatepicker by alexmicic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">jQuery.futureDatepicker</h1>
+      <h2 class="project-tagline">Simple jQuery plugin that allows you to create awesome datepicker for the future dates</h2>
+      <a href="https://github.com/alexmicic/jQuery.futureDatepicker" class="btn">View on GitHub</a>
+      <a href="https://github.com/alexmicic/jQuery.futureDatepicker/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/alexmicic/jQuery.futureDatepicker/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="jqueryfuturedatepicker" class="anchor" href="#jqueryfuturedatepicker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>jQuery.futureDatepicker</h1>
+
+<p>Simple jQuery plugin that allows you to create awesome datepicker for the future dates. 
+Design is fully responsive and have clean and minimalist design and it is primarily built for the mobile devices. It's relaying on CSS <code>flex</code> so it is only compatible with modern web browser that supports this property.</p>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<p>The plugin requires jQuery 2.xx version.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>To start using the plugin, simply include css file in the <code>head</code> section and script file somewhere after jQuery library, preferably at the bottom of the page, like on the example below: </p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span>&gt;
+  &lt;<span class="pl-ent">head</span>&gt;
+    <span class="pl-c">&lt;!-- css --&gt;</span>
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>~/jquery.futureDatepicker.min.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> /&gt;
+  &lt;/<span class="pl-ent">head</span>&gt;
+  &lt;<span class="pl-ent">body</span>&gt;
+    <span class="pl-c">&lt;!-- your html code --&gt;</span>
+
+    <span class="pl-c">&lt;!-- scripts --&gt;</span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>~/jquery.{2.xx}.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>~/jquery.futureDatepicker.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+  &lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>After you included script into your page, you need to create an element that will initialize future datepicker and save the value of the chosen date. To do that, you can simply add an input element with unique ID and then add a plugin call, like on the example below:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span>&gt;
+  &lt;<span class="pl-ent">head</span>&gt;
+    <span class="pl-c">&lt;!-- css --&gt;</span>
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>~/jquery.futureDatepicker.min.css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> /&gt;
+  &lt;/<span class="pl-ent">head</span>&gt;
+  &lt;<span class="pl-ent">body</span>&gt;
+    <span class="pl-c">&lt;!-- your html code --&gt;</span>
+
+    <span class="pl-c">&lt;!-- input field --&gt;</span>
+    &lt;<span class="pl-ent">input</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>element<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>element<span class="pl-pds">"</span></span> <span class="pl-e">placeholder</span>=<span class="pl-s"><span class="pl-pds">"</span>Click here to pick a date<span class="pl-pds">"</span></span>&gt;
+
+    <span class="pl-c">&lt;!-- scripts  --&gt;</span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>~/jquery.{2.xx}.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>~/jquery.futureDatepicker.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">        <span class="pl-en">$</span>(<span class="pl-c1">document</span>).<span class="pl-en">ready</span>(<span class="pl-k">function</span> () {</span>
+<span class="pl-s1">            <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#element<span class="pl-pds">'</span></span>).<span class="pl-en">futureDatepicker</span>({</span>
+<span class="pl-s1">                displayWeekAbbr<span class="pl-k">:</span> <span class="pl-c1">true</span>,</span>
+<span class="pl-s1">                startIn<span class="pl-k">:</span> <span class="pl-c1">0</span>,</span>
+<span class="pl-s1">                futureMonths<span class="pl-k">:</span> <span class="pl-c1">12</span>,</span>
+<span class="pl-s1">                datepicker<span class="pl-k">:</span> <span class="pl-c1">true</span>,</span>
+<span class="pl-s1">                statusBar<span class="pl-k">:</span> <span class="pl-c1">true</span>,</span>
+<span class="pl-s1">                showBgMonths<span class="pl-k">:</span> <span class="pl-c1">true</span>,</span>
+<span class="pl-s1">                additionalClass<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>default<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                <span class="pl-en">beforePick</span><span class="pl-k">:</span> <span class="pl-k">function</span> () { },</span>
+<span class="pl-s1">                <span class="pl-en">afterPick</span><span class="pl-k">:</span> <span class="pl-k">function</span> () { }</span>
+<span class="pl-s1">            });</span>
+<span class="pl-s1">        });</span>
+<span class="pl-s1">    &lt;/<span class="pl-ent">script</span>&gt;</span>
+
+  &lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+
+<h3>
+<a id="element" class="anchor" href="#element" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>element</em>
+</h3>
+
+<p>This needs to be an <code>&lt;input&gt;</code> element with <code>type="text"</code> or <code>type="date"</code>.</p>
+
+<h3>
+<a id="options-defaults" class="anchor" href="#options-defaults" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>options (defaults)</em>
+</h3>
+
+<ul>
+<li>
+<strong>displayWeekAbbr</strong> <em>[Boolean]</em> : Format of the week day labels. It can be <code>true</code> - <em>Sat</em> or <code>false</code> - <em>Saturday</em>.</li>
+<li>
+<strong>startIn</strong> <em>[Integer]</em>: First day of the week. <code>0</code> - <em>Sunday</em>, <code>1</code> - <em>Monday</em>, <em>...</em> , <code>6</code> - <em>Saturday</em>.</li>
+<li>
+<strong>futureMonths</strong> <em>[Integer]</em>: Number of future months to show.</li>
+<li>
+<strong>datepicker</strong> <em>[Boolean]</em>: Choose whether plugin should work as a datepicker or as a full page calendar. This feature is in progress and for now only datepicker should be used, or <code>true</code> value.</li>
+<li>
+<strong>statusBar</strong> <em>[Boolean]</em>: Show <code>true</code> or hide <code>false</code> bottom status bar within the datepicker. If visible, then after the date is picked, <em>SET</em> button needs to be clicked to save the value. If not visible value will be automatically saved by clicking on the date.</li>
+<li>
+<strong>showBgMonths</strong> <em>[Boolean]</em>: Show <code>true</code> or hide <code>false</code> labels of the months, standing behind the days labels.</li>
+<li>
+<strong>additionalClass</strong> <em>[String]</em>: Additional class can be added for optional <code>CSS</code> styling or <code>JavaScript</code> purpose.</li>
+<li>
+<strong>beforePick</strong> <em>[Function]</em>: Code triggered before the date is selected.</li>
+<li>
+<strong>afterPick</strong> <em>[Function]</em>: Code triggered after the date is selected.</li>
+</ul>
+
+<h2>
+<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licence</h2>
+
+<p>(The MIT License)</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/alexmicic/jQuery.futureDatepicker">jQuery.futureDatepicker</a> is maintained by <a href="https://github.com/alexmicic">alexmicic</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
