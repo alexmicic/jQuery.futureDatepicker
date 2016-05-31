@@ -273,6 +273,8 @@
                 }
                 return false;
             });
+            // disable keyboard input
+            $(el).attr('readonly', 'readonly');
         },
         _attachClickEvents: function (el) {
             var self = this;
