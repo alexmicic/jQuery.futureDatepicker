@@ -155,7 +155,7 @@
             // offset for the first month add space before first month day
             if (offset == 1) {
                 for (var k = 0; k < pStart; k++) {
-                    html += '<div class="cal-day ' + elementClass + '"></div>';
+                    html += '<div class="cal-day cal-disable ' + elementClass + '"></div>';
                 }
             }
 
@@ -202,7 +202,7 @@
             // offset for the last month add space after last month day
             if (offset == (this.options.futureMonths + 1)) {
                 for (var k = 0; k < pEnd; k++) {
-                    html += '<div class="cal-day ' + elementClass + '"></div>';
+                    html += '<div class="cal-day cal-disable ' + elementClass + '"></div>';
                 }
             }
 
