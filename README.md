@@ -65,7 +65,7 @@ After you included script into your page, you need to create an element that wil
 </html>
 ```
 ###_element_
-This needs to be an ```<input>``` element with ```type="text"``` or ```type="date"```.
+This needs to be an ```<input>``` element with ```type="text"```.
 
 ###_options (defaults)_
 * __displayWeekAbbr__ _[Boolean]_ : Format of the week day labels. It can be ```true``` - _Sat_ or ```false``` - _Saturday_.
