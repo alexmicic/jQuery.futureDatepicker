@@ -28,7 +28,7 @@ To start using the plugin, simply include css file in the ```head``` section and
 ```
 
 ## Usage
-After you included script into your page, you need to create an element that will initialize future datepicker and save the value of the chosen date. To do that, you can simply add an input element with unique ID and then add a plugin call, like on the example below:
+After you included script into your page, you need to create an element that will initialize future datepicker and save the value of the chosen date. To do that, you can simply add an input element with unique ID and then add a plugin call, like in the example below:
 ```html
 <!DOCTYPE html>
 <html>
